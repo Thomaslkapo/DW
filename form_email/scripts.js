@@ -1,6 +1,8 @@
 (async() => {
+    // (Object) -> { sigla: string, nome: string }
     const optiontag = ({ sigla, nome }) => `<option value=${sigla}>${nome}</option>`
 
+    // (Array, String)
     const filterRegion = (states, sigla) => 
         states.filter(state => state.regiao.sigla === sigla).sort((state1, state2) => {
             if(state1.nome > state2.nome)
@@ -11,6 +13,7 @@
             return 0
         })        
 
+    // (String, Array) 
     const createOptGroup = (region, options) => {
         const optgroup = document.createElement('optgroup')
 
@@ -20,6 +23,7 @@
         return optgroup
     }
 
+    // (String)
     const addOptGroup = optgroup => {
         const selectContainer = document.querySelector('#uf')
         const children = [...selectContainer.children]
