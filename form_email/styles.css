@@ -1,0 +1,63 @@
+*, button, textarea, input{
+    font-family: Arial, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    width: 60vw;
+}
+
+table, tr, td{
+    border: 1px solid #000;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table td.section-title{
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    background: #C2C2C2;
+}
+
+table td {
+    padding: 4px;
+}
+
+table td + td{
+    width: 88%;
+}
+
+table td select{
+    width: 25%;
+    height: 24px;
+}
+
+table td input:not(input[type="radio"], input[type="checkbox"]){
+   width: 80%;
+}
+
+table td input#subject, table td textarea#message{
+    width: 83%;
+}
+
+table td input, textarea{
+    padding: 4px;
+    resize: none;
+}
+
+table td.data-name{
+    font-weight: bold;
+}
+
+table td.submit-td{
+    text-align: center;
+}
